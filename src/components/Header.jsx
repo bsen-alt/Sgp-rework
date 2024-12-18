@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useRef } from "react";
+import headerVid3 from "../assets/images/headerVid3.mp4";
 
 const Header = () => {
   const videoRef = useRef(null);
@@ -46,7 +47,7 @@ const Header = () => {
       {/* Video Background */}
       <video
         ref={videoRef}
-        src="../assets/images/headerVid3.mp4"
+        src={headerVid3}
         autoPlay
         muted
         loop

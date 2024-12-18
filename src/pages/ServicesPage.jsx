@@ -1,34 +1,39 @@
 import { motion } from "framer-motion";
+import restaurantGif2 from "../assets/images/restaurantGif2.gif";
+import constructionPlan from "../assets/images/constructionPlan.jpg";
+import doors2 from "../assets/images/doors2.png";
+import windows from "../assets/images/windows.jpg";
+import concreteStones from "../assets/images/concreteStones.jpg";
 
 const categories = [
   {
     title: "Construction",
     description: "Explore our complete construction solutions.",
-    image: "../assets/images/restaurantGif2.gif",
+    image: restaurantGif2,
     link: "services/construction",
   },
   {
     title: "Construction Plans",
     description: "Customized and detailed construction plans.",
-    image: "../assets/images/constructionPlan.jpg",
+    image: constructionPlan,
     link: "/services/construction-plans",
   },
   {
     title: "Ready Made Doors",
     description: "High-quality ready-made doors for your needs.",
-    image: "../assets/images/doors2.png",
+    image: doors2,
     link: "/services/ready-made-doors",
   },
   {
     title: "Ready Made Windows",
     description: "Durable and stylish ready-made windows.",
-    image: "../assets/images/windows.jpg",
+    image: windows,
     link: "/services/ready-made-windows",
   },
   {
     title: "Concrete Stones",
     description: "Premium concrete stones for construction.",
-    image: "../assets/images/concreteStones.jpg",
+    image: concreteStones,
     link: "/services/concrete-stones",
   },
 ];

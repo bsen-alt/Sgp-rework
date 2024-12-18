@@ -1,5 +1,6 @@
 // ScreensaverOverlay.jsx
 import React, { useEffect, useState } from "react";
+import screenSaverVid from "../assets/images/screenSaverVid.mp4";
 
 const ScreensaverOverlay = () => {
   const [isInactive, setIsInactive] = useState(false);
@@ -41,7 +42,7 @@ const ScreensaverOverlay = () => {
         <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50">
           {/* Overlay Video */}
           <video
-            src="../assets/images/screenSaverVid.mp4" // Replace with your video file path
+            src={screenSaverVid} // Replace with your video file path
             autoPlay
             loop
             muted

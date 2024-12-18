@@ -5,6 +5,7 @@ import { Twitter } from "lucide-react";
 import { Linkedin } from "lucide-react";
 import { Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
+import logo from "../assets/images/logo.png";
 
 const Footer = () => {
   return (
@@ -16,7 +17,7 @@ const Footer = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
         >
-          <img src="../assets/images/logo.png" alt="" className="h-12 mb-4" />
+          <img src={logo} alt="" className="h-12 mb-4" />
           <h1 className="text-white text-2xl font-bold mb-4">
             <span className="text-white">SGP</span>
             <span className="text-yellow-500">Construction</span>

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import sgpImg from "../assets/images/sgpImg.png";
 
 const AboutSection = () => {
   return (
@@ -46,7 +47,7 @@ const AboutSection = () => {
           className="rounded-lg overflow-hidden shadow-lg"
         >
           <img
-            src="../assets/images/sgpImg.png"
+            src={sgpImg}
             alt="SGP Construction"
             className="w-full h-full object-cover"
           />

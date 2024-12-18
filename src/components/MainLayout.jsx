@@ -3,6 +3,7 @@ import Login from "../pages/Login.jsx";
 import Signup from "../pages/Singup.jsx";
 import BugReportModal from "./BugReportModal.jsx";
 import Tabs from "./Tabs.jsx";
+import constructionplanHeadImg from "../assets/images/constructionplanHeadImg.jpg";
 
 const MainLayout = () => {
   const [activeTab, setActiveTab] = useState("login");
@@ -14,8 +15,7 @@ const MainLayout = () => {
       <div
         className="w-1/2 bg-cover bg-center"
         style={{
-          backgroundImage:
-            "url('../assets/images/constructionplanHeadImg.jpg')",
+          backgroundImage: `url(${constructionplanHeadImg})`,
         }}
       ></div>
 

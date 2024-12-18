@@ -1,60 +1,70 @@
 import { motion } from "framer-motion";
 
+import houseplan from "../assets/images/houseplan.jpeg";
+import cabanaplan from "../assets/images/cabanaplan.jpg";
+import garageplan from "../assets/images/garageplan.jpg";
+import guardroomplan from "../assets/images/guardroomplan.jpg";
+import warehouseplan from "../assets/images/warehouseplan.jpg";
+import restairantplan from "../assets/images/restairantplan.jpg";
+import shopplan from "../assets/images/shopplan.png";
+import factoryplan from "../assets/images/factoryplan.png";
+import constructionplanHeadImg from "../assets/images/constructionplanHeadImg.jpg";
+
 const constructionPlans = [
   {
     title: "House Plans",
     description:
       "Discover a wide range of house plans designed to suit every lifestyle, from cozy cottages to luxurious modern homes. Tailored for functionality and aesthetics.",
-    image: "../assets/images/houseplan.jpeg",
+    image: houseplan,
     link: "/services/construction-plans/house-plans",
   },
   {
     title: "Cabana Plans",
     description:
       "Immerse yourself in serene cabana designs, perfect for leisure retreats, poolside escapes, or private getaways. Combining relaxation and elegance seamlessly.",
-    image: "../assets/images/cabanaplan.jpg",
+    image: cabanaplan,
     link: "/services/construction-plans/cabana-plans",
   },
   {
     title: "Garage Plans",
     description:
       "Explore innovative garage layouts tailored to maximize space and functionality, whether for single vehicles, multiple cars, or custom storage solutions.",
-    image: "../assets/images/garageplan.jpg",
+    image: garageplan,
     link: "/services/construction-plans/garage-plans",
   },
   {
     title: "Guard Room Plans",
     description:
       "Efficient and secure guard room designs, crafted to enhance surveillance and provide comfort for security personnel, adaptable to various premises.",
-    image: "../assets/images/guardroomplan.jpg",
+    image: guardroomplan,
     link: "/services/construction-plans/guardroom-plans",
   },
   {
     title: "Warehouse Plans",
     description:
       "Optimized warehouse designs for storage and industrial purposes, featuring practical layouts for seamless workflow, safety, and scalability.",
-    image: "../assets/images/warehouseplan.jpg",
+    image: warehouseplan,
     link: "/services/construction-plans/warehouse-plans",
   },
   {
     title: "Restaurant Plans",
     description:
       "Crafted restaurant plans designed to create captivating dining spaces, with an emphasis on ambiance, functionality, and customer experience.",
-    image: "../assets/images/restairantplan.jpg",
+    image: restairantplan,
     link: "/services/construction-plans/restaurant-plans",
   },
   {
     title: "Shop Plans",
     description:
       "Retail space designs that combine modern aesthetics with practicality, optimized to create welcoming and efficient shopping environments.",
-    image: "../assets/images/shopplan.png",
+    image: shopplan,
     link: "/services/construction-plans/shop-plans",
   },
   {
     title: "Factory Plans",
     description:
       "Comprehensive factory layouts that emphasize efficiency, safety, and scalability, tailored to meet industrial and manufacturing demands.",
-    image: "../assets/images/factoryplan.png",
+    image: factoryplan,
     link: "/services/construction-plans/factory-plans",
   },
 ];
@@ -66,7 +76,7 @@ const ConstructionPlans = () => {
       <div
         className="relative bg-cover bg-center h-[60vh]"
         style={{
-          backgroundImage: "url(../assets/images/constructionplanHeadImg.jpg)",
+          backgroundImage: `url(${constructionplanHeadImg})`,
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center">

@@ -1,5 +1,16 @@
 import { motion } from "framer-motion";
 import headerImg from "../assets/images/constructionHeaderImg.jpg";
+import constructionPlanning from "../assets/images/constructionPlanning.jpg";
+import designArchitecture from "../assets/images/designArchitecture.jpg";
+import constructionExecution from "../assets/images/constructionExecution.jpg";
+import handover from "../assets/images/handover.png";
+
+import residentialConstruction from "../assets/images/residentialConstruction.jpg";
+import commertialConstruction from "../assets/images/commertialConstruction.jpg";
+import industrialConstruction from "../assets/images/industrialConstruction.jpg";
+import renovations from "../assets/images/renovations.jpeg";
+import landscaping from "../assets/images/landscaping.png";
+import customStructures from "../assets/images/customStructures.jpg";
 
 const Construction = () => {
   const steps = [
@@ -7,25 +18,25 @@ const Construction = () => {
       title: "Consultation & Planning",
       description:
         "Our process begins with an in-depth consultation where we take the time to understand your goals, preferences, and requirements. From there, we develop a comprehensive plan tailored to your vision, ensuring every detail is considered to set a strong foundation for success.",
-      image: "../assets/images/constructionPlanning.jpg",
+      image: constructionPlanning,
     },
     {
       title: "Design & Architecture",
       description:
         "With your vision in mind, our skilled designers and architects craft innovative and functional designs that perfectly balance aesthetics and practicality. We ensure that every plan meets your expectations while adhering to industry standards and regulations.",
-      image: "../assets/images/designArchitecture.jpg",
+      image: designArchitecture,
     },
     {
       title: "Construction & Execution",
       description:
         "Our experienced professionals oversee every aspect of the construction process, utilizing high-quality materials and advanced techniques. From ground-breaking to the final touches, we ensure precision, durability, and adherence to your timeline and budget.",
-      image: "../assets/images/constructionExecution.jpg",
+      image: constructionExecution,
     },
     {
       title: "Delivery & Handover",
       description:
         "Once the project is completed, we conduct a thorough quality check to ensure every detail is perfected. We then hand over the final product, on schedule and ready to exceed your expectations, marking the start of a new chapter for you.",
-      image: "../assets/images/handover.png",
+      image: handover,
     },
   ];
 
@@ -35,7 +46,7 @@ const Construction = () => {
       <div
         className="relative bg-cover bg-center h-[60vh]"
         style={{
-          backgroundImage: "url(../assets/images/constructionHeaderImg.jpg)",
+          backgroundImage: `url(${headerImg})`,
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center">
@@ -72,37 +83,37 @@ const Construction = () => {
           {[
             {
               title: "Residential Construction",
-              image: "../assets/images/residentialConstruction.jpg",
+              image: residentialConstruction,
               description:
                 "Create the perfect home with our residential construction services, offering tailored solutions for single-family houses, apartments, and luxury estates.",
             },
             {
               title: "Commercial Buildings",
-              image: "../assets/images/commertialConstruction.jpg",
+              image: commertialConstruction,
               description:
                 "We specialize in designing and constructing high-quality commercial spaces, including office buildings, retail stores, and shopping centers.",
             },
             {
               title: "Industrial Projects",
-              image: "../assets/images/industrialConstruction.jpg",
+              image: industrialConstruction,
               description:
                 "From factories to warehouses, we deliver robust industrial facilities designed for efficiency, safety, and scalability in various sectors.",
             },
             {
               title: "Renovations",
-              image: "../assets/images/renovations.jpeg",
+              image: renovations,
               description:
                 "Transform your existing space with our renovation services, from simple upgrades to complete overhauls, enhancing both aesthetics and functionality.",
             },
             {
               title: "Landscaping",
-              image: "../assets/images/landscaping.png",
+              image: landscaping,
               description:
                 "Our landscaping services focus on creating beautiful, sustainable outdoor spaces, from garden design to hardscaping and maintenance.",
             },
             {
               title: "Custom Structures",
-              image: "../assets/images/customStructures.jpg",
+              image: customStructures,
               description:
                 "Bring your unique vision to life with custom structures, whether it’s a bespoke building, a unique facade, or a specialized space tailored to your needs.",
             },

@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import logoBlack from "../assets/images/logoBlack.png";
 
 const Preloader = () => {
   const navigate = useNavigate();
@@ -56,7 +57,7 @@ const Preloader = () => {
               transition={{ duration: 0.5, ease: "easeOut" }}
             >
               <img
-                src="../assets/images/logoBlack.png"
+                src={logoBlack}
                 alt="SGP Construction & Holding"
                 className="w-24 mx-auto"
               />

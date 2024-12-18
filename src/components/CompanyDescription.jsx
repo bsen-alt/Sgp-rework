@@ -1,34 +1,38 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ServiceCard from "./ServiceCard";
+import constructionPlan from "../assets/images/constructionPlan.jpg";
+import doors2 from "../assets/images/doors2.png";
+import windows from "../assets/images/windows.jpg";
+import concreteStones from "../assets/images/concreteStones.jpg";
 
 const services = [
   {
     title: "Construction Plans",
     subtitle: "Expert Planning",
     description: "Comprehensive construction plans tailored to your needs.",
-    image: "../assets/images/constructionPlan.jpg", // Replace with actual image paths
+    image: constructionPlan, // Replace with actual image paths
     buttonLink: "#construction-plans",
   },
   {
     title: "Ready-Made Doors",
     subtitle: "Stylish & Durable",
     description: "Wide variety of high-quality, ready-to-install doors.",
-    image: "../assets/images/doors2.png", // Replace with actual image paths
+    image: doors2, // Replace with actual image paths
     buttonLink: "#ready-made-doors",
   },
   {
     title: "Ready-Made Windows",
     subtitle: "Premium Quality",
     description: "Durable and elegant windows for every requirement.",
-    image: "../assets/images/windows.jpg", // Replace with actual image paths
+    image: windows, // Replace with actual image paths
     buttonLink: "#ready-made-windows",
   },
   {
     title: "Concrete Stones",
     subtitle: "Reliable Solutions",
     description: "High-strength concrete stones for all construction needs.",
-    image: "../assets/images/concreteStones.jpg", // Replace with actual image paths
+    image: concreteStones, // Replace with actual image paths
     buttonLink: "#concrete-stones",
   },
 ];
