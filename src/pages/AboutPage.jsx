@@ -21,18 +21,18 @@ const AboutPage = () => {
   };
 
   const galleryImages = [
-    "/sgpImg1.jpg",
-    "/sgpImg2.jpg",
-    "/sgpImg3.jpg",
-    "/sgpImg4.jpg",
-    "/sgpImg5.jpg",
-    "/sgpImg6.jpg",
-    "/sgpImg7.jpg",
-    "/sgpImg8.jpg",
-    "/sgpImg9.jpg",
-    "/sgpImg10.jpg",
-    "/sgpImg11.jpg",
-    "/sgpImg12.jpg",
+    "../assets/images/sgpImg1.jpg",
+    "../assets/images/sgpImg2.jpg",
+    "../assets/images/sgpImg3.jpg",
+    "../assets/images/sgpImg4.jpg",
+    "../assets/images/sgpImg5.jpg",
+    "../assets/images/sgpImg6.jpg",
+    "../assets/images/sgpImg7.jpg",
+    "../assets/images/sgpImg8.jpg",
+    "../assets/images/sgpImg9.jpg",
+    "../assets/images/sgpImg10.jpg",
+    "../assets/images/sgpImg11.jpg",
+    "../assets/images/sgpImg12.jpg",
   ];
 
   // Custom Next Arrow

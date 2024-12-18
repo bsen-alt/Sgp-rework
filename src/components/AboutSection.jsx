@@ -46,7 +46,7 @@ const AboutSection = () => {
           className="rounded-lg overflow-hidden shadow-lg"
         >
           <img
-            src="/sgpImg.png" // Replace with an actual image path
+            src="../assets/images/sgpImg.png"
             alt="SGP Construction"
             className="w-full h-full object-cover"
           />

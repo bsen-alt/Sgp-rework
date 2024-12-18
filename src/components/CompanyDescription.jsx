@@ -7,28 +7,28 @@ const services = [
     title: "Construction Plans",
     subtitle: "Expert Planning",
     description: "Comprehensive construction plans tailored to your needs.",
-    image: "/constructionPlan.jpg", // Replace with actual image paths
+    image: "../assets/images/constructionPlan.jpg", // Replace with actual image paths
     buttonLink: "#construction-plans",
   },
   {
     title: "Ready-Made Doors",
     subtitle: "Stylish & Durable",
     description: "Wide variety of high-quality, ready-to-install doors.",
-    image: "/doors2.png", // Replace with actual image paths
+    image: "../assets/images/doors2.png", // Replace with actual image paths
     buttonLink: "#ready-made-doors",
   },
   {
     title: "Ready-Made Windows",
     subtitle: "Premium Quality",
     description: "Durable and elegant windows for every requirement.",
-    image: "/windows.jpg", // Replace with actual image paths
+    image: "../assets/images/windows.jpg", // Replace with actual image paths
     buttonLink: "#ready-made-windows",
   },
   {
     title: "Concrete Stones",
     subtitle: "Reliable Solutions",
     description: "High-strength concrete stones for all construction needs.",
-    image: "/concreteStones.jpg", // Replace with actual image paths
+    image: "../assets/images/concreteStones.jpg", // Replace with actual image paths
     buttonLink: "#concrete-stones",
   },
 ];

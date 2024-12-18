@@ -46,7 +46,7 @@ const Header = () => {
       {/* Video Background */}
       <video
         ref={videoRef}
-        src="/headerVid3.mp4"
+        src="../assets/images/headerVid3.mp4"
         autoPlay
         muted
         loop

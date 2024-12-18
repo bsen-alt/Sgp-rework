@@ -14,7 +14,8 @@ const MainLayout = () => {
       <div
         className="w-1/2 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/constructionplanHeadImg.jpg')",
+          backgroundImage:
+            "url('../assets/images/constructionplanHeadImg.jpg')",
         }}
       ></div>
 

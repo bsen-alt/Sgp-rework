@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import headerImg from "../../public/constructionHeaderImg.jpg";
+import headerImg from "../assets/images/constructionHeaderImg.jpg";
 
 const Construction = () => {
   const steps = [
@@ -7,25 +7,25 @@ const Construction = () => {
       title: "Consultation & Planning",
       description:
         "Our process begins with an in-depth consultation where we take the time to understand your goals, preferences, and requirements. From there, we develop a comprehensive plan tailored to your vision, ensuring every detail is considered to set a strong foundation for success.",
-      image: "/constructionPlanning.jpg",
+      image: "../assets/images/constructionPlanning.jpg",
     },
     {
       title: "Design & Architecture",
       description:
         "With your vision in mind, our skilled designers and architects craft innovative and functional designs that perfectly balance aesthetics and practicality. We ensure that every plan meets your expectations while adhering to industry standards and regulations.",
-      image: "/designArchitecture.jpg",
+      image: "../assets/images/designArchitecture.jpg",
     },
     {
       title: "Construction & Execution",
       description:
         "Our experienced professionals oversee every aspect of the construction process, utilizing high-quality materials and advanced techniques. From ground-breaking to the final touches, we ensure precision, durability, and adherence to your timeline and budget.",
-      image: "/constructionExecution.jpg",
+      image: "../assets/images/constructionExecution.jpg",
     },
     {
       title: "Delivery & Handover",
       description:
         "Once the project is completed, we conduct a thorough quality check to ensure every detail is perfected. We then hand over the final product, on schedule and ready to exceed your expectations, marking the start of a new chapter for you.",
-      image: "/handover.png",
+      image: "../assets/images/handover.png",
     },
   ];
 
@@ -35,7 +35,7 @@ const Construction = () => {
       <div
         className="relative bg-cover bg-center h-[60vh]"
         style={{
-          backgroundImage: "url(/constructionHeaderImg.jpg)",
+          backgroundImage: "url(../assets/images/constructionHeaderImg.jpg)",
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center">
@@ -72,37 +72,37 @@ const Construction = () => {
           {[
             {
               title: "Residential Construction",
-              image: "/residentialConstruction.jpg",
+              image: "../assets/images/residentialConstruction.jpg",
               description:
                 "Create the perfect home with our residential construction services, offering tailored solutions for single-family houses, apartments, and luxury estates.",
             },
             {
               title: "Commercial Buildings",
-              image: "/commertialConstruction.jpg",
+              image: "../assets/images/commertialConstruction.jpg",
               description:
                 "We specialize in designing and constructing high-quality commercial spaces, including office buildings, retail stores, and shopping centers.",
             },
             {
               title: "Industrial Projects",
-              image: "/industrialConstruction.jpg",
+              image: "../assets/images/industrialConstruction.jpg",
               description:
                 "From factories to warehouses, we deliver robust industrial facilities designed for efficiency, safety, and scalability in various sectors.",
             },
             {
               title: "Renovations",
-              image: "/renovations.jpeg",
+              image: "../assets/images/renovations.jpeg",
               description:
                 "Transform your existing space with our renovation services, from simple upgrades to complete overhauls, enhancing both aesthetics and functionality.",
             },
             {
               title: "Landscaping",
-              image: "/landscaping.png",
+              image: "../assets/images/landscaping.png",
               description:
                 "Our landscaping services focus on creating beautiful, sustainable outdoor spaces, from garden design to hardscaping and maintenance.",
             },
             {
               title: "Custom Structures",
-              image: "/customStructures.jpg",
+              image: "../assets/images/customStructures.jpg",
               description:
                 "Bring your unique vision to life with custom structures, whether it’s a bespoke building, a unique facade, or a specialized space tailored to your needs.",
             },
