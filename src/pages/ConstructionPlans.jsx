@@ -5,56 +5,56 @@ const constructionPlans = [
     title: "House Plans",
     description:
       "Discover a wide range of house plans designed to suit every lifestyle, from cozy cottages to luxurious modern homes. Tailored for functionality and aesthetics.",
-    image: "../../public/houseplan.jpeg",
+    image: "/houseplan.jpeg",
     link: "/services/construction-plans/house-plans",
   },
   {
     title: "Cabana Plans",
     description:
       "Immerse yourself in serene cabana designs, perfect for leisure retreats, poolside escapes, or private getaways. Combining relaxation and elegance seamlessly.",
-    image: "../../public/cabanaplan.jpg",
+    image: "/cabanaplan.jpg",
     link: "/services/construction-plans/cabana-plans",
   },
   {
     title: "Garage Plans",
     description:
       "Explore innovative garage layouts tailored to maximize space and functionality, whether for single vehicles, multiple cars, or custom storage solutions.",
-    image: "../../public/garageplan.jpg",
+    image: "/garageplan.jpg",
     link: "/services/construction-plans/garage-plans",
   },
   {
     title: "Guard Room Plans",
     description:
       "Efficient and secure guard room designs, crafted to enhance surveillance and provide comfort for security personnel, adaptable to various premises.",
-    image: "../../public/guardroomplan.jpg",
+    image: "/guardroomplan.jpg",
     link: "/services/construction-plans/guardroom-plans",
   },
   {
     title: "Warehouse Plans",
     description:
       "Optimized warehouse designs for storage and industrial purposes, featuring practical layouts for seamless workflow, safety, and scalability.",
-    image: "../../public/warehouseplan.jpg",
+    image: "/warehouseplan.jpg",
     link: "/services/construction-plans/warehouse-plans",
   },
   {
     title: "Restaurant Plans",
     description:
       "Crafted restaurant plans designed to create captivating dining spaces, with an emphasis on ambiance, functionality, and customer experience.",
-    image: "../../public/restairantplan.jpg",
+    image: "/restairantplan.jpg",
     link: "/services/construction-plans/restaurant-plans",
   },
   {
     title: "Shop Plans",
     description:
       "Retail space designs that combine modern aesthetics with practicality, optimized to create welcoming and efficient shopping environments.",
-    image: "../../public/shopplan.png",
+    image: "/shopplan.png",
     link: "/services/construction-plans/shop-plans",
   },
   {
     title: "Factory Plans",
     description:
       "Comprehensive factory layouts that emphasize efficiency, safety, and scalability, tailored to meet industrial and manufacturing demands.",
-    image: "../../public/factoryplan.png",
+    image: "/factoryplan.png",
     link: "/services/construction-plans/factory-plans",
   },
 ];
@@ -66,7 +66,7 @@ const ConstructionPlans = () => {
       <div
         className="relative bg-cover bg-center h-[60vh]"
         style={{
-          backgroundImage: "url(../../public/constructionplanHeadImg.jpg)",
+          backgroundImage: "url(/constructionplanHeadImg.jpg)",
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center">

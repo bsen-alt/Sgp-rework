@@ -56,7 +56,7 @@ const Preloader = () => {
               transition={{ duration: 0.5, ease: "easeOut" }}
             >
               <img
-                src="../../public/logoBlack.png"
+                src="/logoBlack.png"
                 alt="SGP Construction & Holding"
                 className="w-24 mx-auto"
               />

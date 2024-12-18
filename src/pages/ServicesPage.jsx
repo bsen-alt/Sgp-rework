@@ -4,31 +4,31 @@ const categories = [
   {
     title: "Construction",
     description: "Explore our complete construction solutions.",
-    image: "../../public/restaurantGif2.gif",
+    image: "/restaurantGif2.gif",
     link: "services/construction",
   },
   {
     title: "Construction Plans",
     description: "Customized and detailed construction plans.",
-    image: "../../public/constructionPlan.jpg",
+    image: "/constructionPlan.jpg",
     link: "/services/construction-plans",
   },
   {
     title: "Ready Made Doors",
     description: "High-quality ready-made doors for your needs.",
-    image: "../../public/doors2.png",
+    image: "/doors2.png",
     link: "/services/ready-made-doors",
   },
   {
     title: "Ready Made Windows",
     description: "Durable and stylish ready-made windows.",
-    image: "../../public/windows.jpg",
+    image: "/windows.jpg",
     link: "/services/ready-made-windows",
   },
   {
     title: "Concrete Stones",
     description: "Premium concrete stones for construction.",
-    image: "../../public/concreteStones.jpg",
+    image: "/concreteStones.jpg",
     link: "/services/concrete-stones",
   },
 ];

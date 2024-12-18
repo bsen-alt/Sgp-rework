@@ -110,7 +110,7 @@ const Navbar = () => {
     >
       <nav className="flex justify-between items-center px-6 md:px-24 py-3 bg-black/90 backdrop-blur-lg shadow-md relative z-10">
         <Link className="text-xl font-bold cursor-pointer" to="/home">
-          <img src="../../public/logo.png" alt="Logo" className="h-10" />
+          <img src="/logo.png" alt="Logo" className="h-10" />
         </Link>
 
         {/* Desktop Navigation */}
