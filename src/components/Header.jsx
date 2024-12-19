@@ -1,5 +1,4 @@
-import React from "react";
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import headerVid3 from "../assets/images/headerVid3.mp4";
 
 const Header = () => {
@@ -14,36 +13,34 @@ const Header = () => {
     const handleVideoLoop = () => {
       if (video.paused || video.ended) return;
 
-      // Check if the video is playing forward or backward
       if (isPlayingForward) {
-        // If the video reaches the end, reverse the direction
-        if (video.currentTime === video.duration) {
+        // Reverse direction when the video ends
+        if (video.currentTime >= video.duration) {
           isPlayingForward = false;
-          video.currentTime = video.duration - 0.5; // Set the video just before the end
+          video.currentTime = video.duration - 0.5;
         }
       } else {
-        // If the video reaches the start, reverse the direction again
-        if (video.currentTime === 0) {
+        // Reverse direction when the video starts
+        if (video.currentTime <= 0) {
           isPlayingForward = true;
-          video.currentTime = 0.5; // Set the video just after the start to avoid stuck frame
+          video.currentTime = 0.5;
         }
       }
 
-      // Continue looping the playback function
+      // Continue looping playback
       requestAnimationFrame(handleVideoLoop);
     };
 
-    // Start the loop function
     handleVideoLoop();
 
     return () => {
-      // Cleanup when the component unmounts
+      // Cleanup on unmount
       cancelAnimationFrame(handleVideoLoop);
     };
   }, []);
 
   return (
-    <div className="relative h-screen overflow-hidden ">
+    <div className="relative h-screen overflow-hidden">
       {/* Video Background */}
       <video
         ref={videoRef}
@@ -58,24 +55,26 @@ const Header = () => {
       {/* Black Overlay with Transparency */}
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
 
-      {/* Content on top of the video */}
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white px-4">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
+      {/* Content on Top of the Video */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-4">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-4 leading-tight">
           SGP Construction <br />& Holding
         </h1>
-        <p className="text-[0.7rem] mb-6 font-inter">
+        <p className="text-sm sm:text-base md:text-lg text-center max-w-xl mb-6">
           Explore innovative solutions and cutting-edge designs that bring your
           ideas to life. Whether you're building your dream home, renovating an
           office, or creating custom products, we provide the plans and
           resources to make your vision a reality. Let us help you turn your
           concepts into tangible success.
         </p>
-        <button className="bg-white text-black py-2 px-6 rounded-full text-sm font-medium hover:bg-slate-300 transition-all">
-          Our Services
-        </button>
-        <button className="bg-yellow-500 text-black py-2 px-6 ml-2 rounded-full text-sm font-medium hover:bg-yellow-600 transition-all">
-          Call Us
-        </button>
+        <div className="flex flex-wrap justify-center gap-3">
+          <button className="bg-white text-black py-2 px-6 rounded-full text-sm sm:text-base font-medium hover:bg-slate-300 transition-all">
+            Our Services
+          </button>
+          <button className="bg-yellow-500 text-black py-2 px-6 rounded-full text-sm sm:text-base font-medium hover:bg-yellow-600 transition-all">
+            Call Us
+          </button>
+        </div>
       </div>
     </div>
   );

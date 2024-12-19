@@ -29,7 +29,7 @@ const Preloader = () => {
 
   useEffect(() => {
     if (!isPreloading) {
-      setTimeout(() => navigate("/home"), 800); // Ensure the redirect happens after animations
+      setTimeout(() => navigate("/"), 800); // Ensure the redirect happens after animations
     }
   }, [isPreloading, navigate]);
 

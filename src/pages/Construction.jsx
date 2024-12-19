@@ -44,17 +44,17 @@ const Construction = () => {
     <div className="min-h-screen bg-gray-100 text-gray-800 select-none">
       {/* Hero Section */}
       <div
-        className="relative bg-cover bg-center h-[60vh]"
+        className="relative bg-cover bg-center h-[50vh] md:h-[60vh]"
         style={{
           backgroundImage: `url(${headerImg})`,
         }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center">
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center px-4">
           <motion.h1
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="text-4xl md:text-6xl font-bold text-white"
+            className="text-3xl md:text-5xl lg:text-6xl font-bold text-white text-center"
           >
             Construction Services
           </motion.h1>
@@ -62,7 +62,7 @@ const Construction = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="mt-4 text-lg md:text-xl text-gray-300 text-center"
+            className="mt-4 text-sm md:text-lg lg:text-xl text-gray-300 text-center"
           >
             Building Your Vision, One Brick at a Time.
           </motion.p>
@@ -70,16 +70,16 @@ const Construction = () => {
       </div>
 
       {/* Types of Construction */}
-      <section className="py-16 px-6">
-        <h2 className="text-3xl font-bold text-center">
+      <section className="py-12 px-6 md:py-16 md:px-12">
+        <h2 className="text-2xl md:text-3xl font-bold text-center">
           Our Construction Services
         </h2>
-        <p className="mt-4 text-center text-gray-600 ">
+        <p className="mt-4 text-center text-gray-600 text-sm md:text-base">
           We specialize in a wide range of construction projects, tailored to
           your needs.
         </p>
 
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             {
               title: "Residential Construction",
@@ -123,23 +123,20 @@ const Construction = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="relative group h-64 overflow-hidden rounded-lg shadow-lg bg-gray-900 select-none"
+              className="relative group h-56 md:h-64 overflow-hidden rounded-lg shadow-lg bg-gray-900 select-none"
             >
-              {/* Image */}
               <img
                 src={service.image}
                 alt={service.title}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out"
               />
-
-              {/* Text */}
-              <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center transition-opacity duration-500">
-                <h3 className="text-4xl font-semibold text-white text-center items-center">
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center px-4">
+                <h3 className="text-lg md:text-xl lg:text-2xl font-semibold text-white text-center">
                   {service.title}
                 </h3>
-                <motion.p className="text-[.7rem] px-4 opacity-0 group-hover:opacity-100 group-hover:mt-4 transition-all duration-300 z-10 text-white text-center">
+                <p className="mt-2 text-xs md:text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-center">
                   {service.description}
-                </motion.p>
+                </p>
               </div>
             </motion.div>
           ))}
@@ -147,14 +144,14 @@ const Construction = () => {
       </section>
 
       {/* Process Section */}
-      <section className="bg-gray-200  py-16 px-48">
-        <h2 className="text-3xl font-bold text-center">
+      <section className="bg-gray-200 py-12 px-6 md:py-16 md:px-12">
+        <h2 className="text-2xl md:text-3xl font-bold text-center">
           Our Construction Process
         </h2>
-        <p className="mt-2 text-center text-gray-600 ">
+        <p className="mt-2 text-center text-gray-600 text-sm md:text-base">
           From concept to completion, here's how we bring your vision to life.
         </p>
-        <div className="mt-12 space-y-8">
+        <div className="mt-8 md:mt-12 space-y-6">
           {steps.map((step, index) => (
             <motion.div
               key={index}
@@ -168,101 +165,17 @@ const Construction = () => {
               <img
                 src={step.image}
                 alt={step.title}
-                className="w-full md:w-1/2 h-64 object-cover rounded-md"
+                className="w-full md:w-1/2 h-56 md:h-64 object-cover rounded-md"
               />
               <div className="mt-6 md:mt-0 md:ml-8 md:w-1/2 px-4">
-                <h3 className="text-xl font-bold">{step.title}</h3>
-                <p className="mt-2 text-gray-600 text-sm">{step.description}</p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-
-      {/* Benefits Section */}
-      <section className="py-16 px-6 bg-gray-50 ">
-        <h2 className="text-4xl font-bold text-center text-gray-800 ">
-          Why Choose SGP?
-        </h2>
-        <p className="mt-4 text-center text-gray-600 ">
-          Explore the unparalleled advantages of partnering with our skilled and
-          dedicated construction team.
-        </p>
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[
-            {
-              title: "Experienced Professionals",
-              icon: "👷",
-              description:
-                "Our seasoned team brings decades of expertise, ensuring top-notch execution for every project.",
-            },
-            {
-              title: "High-Quality Materials",
-              icon: "🧱",
-              description:
-                "We source only the finest materials to deliver durable and long-lasting structures.",
-            },
-            {
-              title: "Timely Delivery",
-              icon: "⏰",
-              description:
-                "We are committed to meeting deadlines without compromising on quality.",
-            },
-            {
-              title: "Tailored Solutions",
-              icon: "🛠️",
-              description:
-                "Every project is customized to match your specific needs, ensuring complete satisfaction.",
-            },
-            {
-              title: "Cost-Effective",
-              icon: "💰",
-              description:
-                "Our competitive pricing and efficient processes guarantee maximum value for your investment.",
-            },
-            {
-              title: "Sustainable Practices",
-              icon: "🌱",
-              description:
-                "We employ eco-friendly methods, reducing environmental impact while maintaining quality.",
-            },
-          ].map((benefit, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="relative group bg-gradient-to-tr from-white via-gray-100 to-gray-50   shadow-lg rounded-lg p-6 overflow-hidden"
-            >
-              <div className="absolute inset-0 bg-gradient-to-tr from-blue-500 to-blue-700 opacity-0 group-hover:opacity-70 transition-all duration-300"></div>
-              <div className="relative z-10 flex flex-col items-center">
-                <span className="text-5xl">{benefit.icon}</span>
-                <h3 className="mt-4 text-xl font-semibold text-gray-800  group-hover:text-white transition-all duration-300">
-                  {benefit.title}
-                </h3>
-                <p className="mt-2 text-center text-gray-600  group-hover:text-gray-200 transition-all duration-300">
-                  {benefit.description}
+                <h3 className="text-lg md:text-xl font-bold">{step.title}</h3>
+                <p className="mt-2 text-sm md:text-base text-gray-600">
+                  {step.description}
                 </p>
               </div>
             </motion.div>
           ))}
         </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="bg-yellow-500 py-16 px-6 text-center">
-        <h2 className="text-3xl font-bold text-gray-900">
-          Ready to Start Your Project?
-        </h2>
-        <p className="mt-4 text-gray-800">
-          Get in touch with our team to discuss your construction needs.
-        </p>
-        <a
-          href="/contact"
-          className="mt-6 inline-block bg-gray-900 text-yellow-500 px-6 py-3 rounded-lg font-semibold hover:bg-gray-800"
-        >
-          Contact Us
-        </a>
       </section>
     </div>
   );

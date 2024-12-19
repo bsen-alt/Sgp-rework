@@ -1,60 +1,47 @@
-import React from "react";
 import { motion } from "framer-motion";
 
-const LoginForm = () => (
-  <motion.form
-    initial={{ opacity: 0, x: 50 }}
-    animate={{ opacity: 1, x: 0 }}
-    transition={{ duration: 0.5 }}
-    className="space-y-6"
-  >
-    <div>
-      <label
-        htmlFor="email"
-        className="block text-sm font-medium text-gray-300"
-      >
-        Email Address
-      </label>
-      <input
-        id="email"
-        type="email"
-        required
-        placeholder="you@example.com"
-        className="mt-1 w-full px-4 py-2 border rounded-lg bg-black text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold"
-      />
-    </div>
-    <div>
-      <label
-        htmlFor="password"
-        className="block text-sm font-medium text-gray-300"
-      >
-        Password
-      </label>
-      <input
-        id="password"
-        type="password"
-        required
-        placeholder="Enter your password"
-        className="mt-1 w-full px-4 py-2 border rounded-lg bg-black text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold"
-      />
-    </div>
-    <div className="flex justify-between items-center">
-      <a
-        href="#"
-        className="text-sm text-gold hover:underline focus:outline-none focus:ring-2 focus:ring-gold"
-      >
-        Forgot Password?
-      </a>
-    </div>
-    <motion.button
-      type="submit"
-      className="w-full py-2 px-4 bg-gold text-black font-semibold rounded-lg shadow-md bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2"
-      whileHover={{ scale: 1.03 }}
-      whileTap={{ scale: 0.95 }}
+const Login = () => {
+  return (
+    <motion.div
+      className="w-[90%] max-w-md p-6 bg-black rounded-lg shadow-lg"
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
     >
-      Login
-    </motion.button>
-  </motion.form>
-);
+      <h1 className="text-2xl font-bold mb-6">Sign up account</h1>
+      <p className="text-gray-400 mb-6">
+        Enter your personal data to create your account.
+      </p>
+      <div className="flex gap-4 mb-4">
+        <button className="bg-gray-800 text-white py-2 px-4 rounded">G</button>
+        <button className="bg-gray-800 text-white py-2 px-4 rounded">
+          GitHub
+        </button>
+      </div>
+      <div className="my-4 text-gray-400 text-center">or</div>
+      <form>
+        <input
+          type="email"
+          placeholder="Email"
+          className="w-full bg-gray-900 py-2 px-4 mb-4 rounded text-gray-300"
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          className="w-full bg-gray-900 py-2 px-4 mb-6 rounded text-gray-300"
+        />
+        <button className="w-full bg-white text-black py-2 px-4 rounded">
+          Sign up →
+        </button>
+      </form>
+      <p className="mt-4 text-gray-500 text-center">
+        Already have an account?{" "}
+        <a href="#" className="text-white">
+          Log in
+        </a>
+      </p>
+    </motion.div>
+  );
+};
 
-export default LoginForm;
+export default Login;

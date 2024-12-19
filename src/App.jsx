@@ -37,10 +37,10 @@ function App() {
       <ScreensaverOverlay />
       <Routes>
         {/* Splash Screen */}
-        <Route path="/" element={<Preloader />} />
+        <Route path="/preloader" element={<Preloader />} />
 
         <Route
-          path="/home"
+          path="/"
           element={
             <>
               {renderTopBar()}

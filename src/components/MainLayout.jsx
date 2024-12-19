@@ -2,29 +2,23 @@ import React, { useState } from "react";
 import Login from "../pages/Login.jsx";
 import Signup from "../pages/Singup.jsx";
 import BugReportModal from "./BugReportModal.jsx";
-import Tabs from "./Tabs.jsx";
-import constructionplanHeadImg from "../assets/images/constructionplanHeadImg.jpg";
+import VisualGrid from "./VisualGrid.jsx";
+VisualGrid;
 
 const MainLayout = () => {
   const [activeTab, setActiveTab] = useState("login");
   const [showBugModal, setShowBugModal] = useState(false);
 
   return (
-    <div className="flex min-h-screen">
-      {/* Left Half */}
-      <div
-        className="w-1/2 bg-cover bg-center"
-        style={{
-          backgroundImage: `url(${constructionplanHeadImg})`,
-        }}
-      ></div>
+    <div className="flex w-full h-screen">
+      {/* Left Section */}
+      <div className="w-1/2 bg-black flex items-center justify-center">
+        <Login />
+      </div>
 
-      {/* Right Half */}
-      <div className="w-1/2 bg-black text-white flex flex-col justify-center items-center">
-        <div className="w-full max-w-md p-6">
-          <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
-          {activeTab === "login" ? <Login /> : <Signup />}
-        </div>
+      {/* Right Section */}
+      <div className="w-1/2 bg-gradient-to-br from-gray-800 via-black to-gray-900">
+        <VisualGrid />
       </div>
 
       {/* Bug Report Floating Button */}

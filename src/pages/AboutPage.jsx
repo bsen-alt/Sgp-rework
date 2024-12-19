@@ -98,15 +98,15 @@ const AboutPage = () => {
           transition={{ duration: 0.7 }}
           className="text-center mb-8"
         >
-          <h2 className="text-5xl font-bold text-gray-800 mb-8">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-8">
             About{" "}
             <span className="text-yellow-500">SGP Construction & Holding</span>
           </h2>
-          <p className="text-gray-600 text-[.8rem]  mt-2">
+          <p className="text-gray-600 text-xs sm:text-sm mt-2">
             "පෙර සවි ඉදිකිරීම් ක්ෂේත්‍රයේ ලංකාවේ අංක එකේ සන්නාමය, ඉදිකිරීම්
             ක්ෂේත්‍රයේ සියළුම සේවාවන් එකම තැනින්."
           </p>
-          <p className="text-gray-500 mt-2 italic text-[.8rem] mb-18">
+          <p className="text-gray-500 mt-2 italic text-xs sm:text-sm mb-18">
             "The number one brand in Sri Lanka’s construction sector, offering
             all construction services in one place."
           </p>
@@ -121,7 +121,7 @@ const AboutPage = () => {
             transition={{ duration: 0.7 }}
             className="space-y-6"
           >
-            <p className="text-gray-700 text-sm  leading-relaxed">
+            <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
               At <span className="font-bold">SGP Construction Holdings</span>,
               we specialize in providing end-to-end construction solutions that
               cater to diverse needs. Whether it’s luxurious cabanas in Ella,
@@ -131,7 +131,7 @@ const AboutPage = () => {
               value.
             </p>
 
-            <p className="text-gray-700 text-sm  leading-relaxed">
+            <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
               Established with a vision to revolutionize the construction
               industry, we are known for delivering ultra-modern designs and
               maintaining impeccable standards of quality. We serve thousands of
@@ -139,7 +139,7 @@ const AboutPage = () => {
               budget-friendly homes to premium luxury developments.
             </p>
 
-            <p className="text-gray-700 text-sm leading-relaxed ">
+            <p className="text-gray-700 text-sm sm:text-base leading-relaxed ">
               Why choose SGP Construction Holdings? - We manage all aspects of{" "}
               <span className="font-bold">water</span>,{" "}
               <span className="font-bold">electricity</span>, and{" "}
@@ -157,14 +157,14 @@ const AboutPage = () => {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
-            className="grid grid-cols-2 gap-4"
+            className="grid grid-cols-2 sm:grid-cols-2 gap-4"
           >
             {galleryImages.slice(0, 4).map((image, index) => (
               <img
                 key={index}
                 src={image}
                 alt={`Image ${index + 1}`}
-                className="rounded-md shadow-md w-full h-40 object-cover cursor-pointer"
+                className="rounded-md shadow-md w-full h-40 sm:h-52 object-cover cursor-pointer"
                 onClick={() => handleImageClick(image)}
               />
             ))}
@@ -208,7 +208,7 @@ const AboutPage = () => {
           <h3 className="text-2xl font-semibold text-gray-800 mb-4">
             Why Choose Us?
           </h3>
-          <ul className="text-gray-600 space-y-3 text-sm">
+          <ul className="text-gray-600 space-y-3 text-sm sm:text-base">
             <li>
               ♦ Minimum guaranteed income from cabanas:{" "}
               <span className="font-bold">3 Lakhs/Month</span>.
@@ -242,7 +242,7 @@ const AboutPage = () => {
                   <img
                     src={image}
                     alt={`Gallery ${index + 1}`}
-                    className="rounded-sm shadow-md w-full h-64 object-cover"
+                    className="rounded-sm shadow-md w-full h-64 sm:h-80 object-cover"
                   />
                 </div>
               ))}

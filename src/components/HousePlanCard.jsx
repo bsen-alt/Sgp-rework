@@ -60,7 +60,7 @@ const HousePlanCard = ({ plan }) => {
       variants={cardVariants}
       initial="hidden"
       animate="visible"
-      className="bg-white shadow-lg rounded-md overflow-hidden border border-black/10"
+      className="bg-white shadow-lg rounded-md overflow-hidden border border-black/20"
     >
       {/* Image Section */}
       <div className="relative overflow-hidden group">

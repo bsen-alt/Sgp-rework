@@ -110,7 +110,7 @@ const Navbar = () => {
       className="fixed top-0 left-0 w-full z-50 shadow-md h-[4rem] select-none"
     >
       <nav className="flex justify-between items-center px-6 md:px-24 py-3 bg-black/90 backdrop-blur-lg shadow-md relative z-10">
-        <Link className="text-xl font-bold cursor-pointer" to="/home">
+        <Link className="text-xl font-bold cursor-pointer" to="/">
           <img src={logo} alt="Logo" className="h-10" />
         </Link>
 

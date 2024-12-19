@@ -71,7 +71,7 @@ const constructionPlans = [
 
 const ConstructionPlans = () => {
   return (
-    <div className="min-h-screen bg-gray-100 py-12  select-none">
+    <div className="min-h-screen bg-gray-100 py-12 select-none">
       {/* Hero Section */}
       <div
         className="relative bg-cover bg-center h-[60vh]"
@@ -84,7 +84,7 @@ const ConstructionPlans = () => {
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="text-4xl md:text-6xl font-bold text-white"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white text-center px-4"
           >
             Construction Plans
           </motion.h1>
@@ -92,7 +92,7 @@ const ConstructionPlans = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="mt-4 text-lg md:text-xl text-gray-300 text-center"
+            className="mt-4 text-sm sm:text-lg md:text-xl text-gray-300 text-center px-6"
           >
             Explore various construction plans that fit your needs
           </motion.p>
@@ -101,7 +101,7 @@ const ConstructionPlans = () => {
 
       <div className="max-w-7xl mx-auto">
         {/* Plans Grid */}
-        <div className="mt-12 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-4 md:px-8">
           {constructionPlans.map((plan, index) => (
             <motion.div
               key={index}
@@ -114,25 +114,25 @@ const ConstructionPlans = () => {
               <motion.img
                 src={plan.image}
                 alt={plan.title}
-                className="w-full h-64 object-cover transform group-hover:scale-110 transition-all duration-500"
+                className="w-full h-48 md:h-64 lg:h-72 object-cover transform group-hover:scale-110 transition-all duration-500"
               />
 
               {/* Overlay */}
               <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-70 transition-all flex flex-col justify-center items-center text-center text-white p-4">
                 {/* Title */}
-                <motion.h3 className="text-3xl font-bold transition-transform duration-300 group-hover:translate-y-[-2px] z-10 translate-y-[40px]">
+                <motion.h3 className="text-lg md:text-xl lg:text-2xl font-bold transition-transform duration-300 group-hover:translate-y-[-2px] z-10">
                   {plan.title}
                 </motion.h3>
 
                 {/* Description */}
-                <motion.p className="text-[.7rem] px-4 mt-2 opacity-0 group-hover:opacity-100 group-hover:mt-4 transition-all duration-300 z-10">
+                <motion.p className="text-xs md:text-sm lg:text-base px-2 mt-2 opacity-0 group-hover:opacity-100 group-hover:mt-4 transition-all duration-300 z-10">
                   {plan.description}
                 </motion.p>
 
                 {/* Button */}
                 <motion.a
                   href={plan.link}
-                  className="mt-4 px-4 py-2 bg-yellow-400 text-black rounded-md font-medium hover:bg-yellow-500 transition-all duration-300 z-10"
+                  className="mt-4 px-3 md:px-4 py-2 bg-yellow-400 text-black text-xs md:text-sm font-medium rounded-md hover:bg-yellow-500 transition-all duration-300 z-10"
                 >
                   Visit Section
                 </motion.a>

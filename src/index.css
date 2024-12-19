@@ -38,3 +38,7 @@ body {
 ::-webkit-scrollbar-corner {
   background-color: #1f2937;
 }
+
+.card {
+  background-clip: border-box;
+}
