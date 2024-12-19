@@ -12,28 +12,28 @@ const services = [
     subtitle: "Expert Planning",
     description: "Comprehensive construction plans tailored to your needs.",
     image: constructionPlan, // Replace with actual image paths
-    buttonLink: "#construction-plans",
+    buttonLink: "/services/construction-plans",
   },
   {
     title: "Ready-Made Doors",
     subtitle: "Stylish & Durable",
     description: "Wide variety of high-quality, ready-to-install doors.",
     image: doors2, // Replace with actual image paths
-    buttonLink: "#ready-made-doors",
+    buttonLink: "/services/ready-made-doors",
   },
   {
     title: "Ready-Made Windows",
     subtitle: "Premium Quality",
     description: "Durable and elegant windows for every requirement.",
     image: windows, // Replace with actual image paths
-    buttonLink: "#ready-made-windows",
+    buttonLink: "/services/ready-made-windows",
   },
   {
     title: "Concrete Stones",
     subtitle: "Reliable Solutions",
     description: "High-strength concrete stones for all construction needs.",
     image: concreteStones, // Replace with actual image paths
-    buttonLink: "#concrete-stones",
+    buttonLink: "/services/concrete-stones",
   },
 ];
 

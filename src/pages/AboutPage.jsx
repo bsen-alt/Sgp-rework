@@ -7,6 +7,19 @@ import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import ContactUsBar from "../components/ContactUsBar.jsx";
 
+import sgpImg1 from "../assets/images/sgpImg1.jpg";
+import sgpImg2 from "../assets/images/sgpImg2.jpg";
+import sgpImg3 from "../assets/images/sgpImg3.jpg";
+import sgpImg4 from "../assets/images/sgpImg4.jpg";
+import sgpImg5 from "../assets/images/sgpImg5.jpg";
+import sgpImg6 from "../assets/images/sgpImg6.jpg";
+import sgpImg7 from "../assets/images/sgpImg7.jpg";
+import sgpImg8 from "../assets/images/sgpImg8.jpg";
+import sgpImg9 from "../assets/images/sgpImg9.jpg";
+import sgpImg10 from "../assets/images/sgpImg10.jpg";
+import sgpImg11 from "../assets/images/sgpImg11.jpg";
+import sgpImg12 from "../assets/images/sgpImg12.jpg";
+
 const AboutPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState("");
@@ -21,18 +34,18 @@ const AboutPage = () => {
   };
 
   const galleryImages = [
-    "../assets/images/sgpImg1.jpg",
-    "../assets/images/sgpImg2.jpg",
-    "../assets/images/sgpImg3.jpg",
-    "../assets/images/sgpImg4.jpg",
-    "../assets/images/sgpImg5.jpg",
-    "../assets/images/sgpImg6.jpg",
-    "../assets/images/sgpImg7.jpg",
-    "../assets/images/sgpImg8.jpg",
-    "../assets/images/sgpImg9.jpg",
-    "../assets/images/sgpImg10.jpg",
-    "../assets/images/sgpImg11.jpg",
-    "../assets/images/sgpImg12.jpg",
+    sgpImg1,
+    sgpImg2,
+    sgpImg3,
+    sgpImg4,
+    sgpImg5,
+    sgpImg6,
+    sgpImg7,
+    sgpImg8,
+    sgpImg9,
+    sgpImg10,
+    sgpImg11,
+    sgpImg12,
   ];
 
   // Custom Next Arrow

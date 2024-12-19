@@ -21,6 +21,7 @@ const Footer = () => {
           <h1 className="text-white text-2xl font-bold mb-4">
             <span className="text-white">SGP</span>
             <span className="text-yellow-500">Construction</span>
+            <br />
             <span className="text-white">&</span>
             <span className="text-yellow-500">Holding</span>
           </h1>

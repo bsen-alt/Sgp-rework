@@ -115,7 +115,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex gap-8 text-[0.8rem] text-white font-medium">
+        <div className="hidden md:flex gap-8 text-[1rem] text-white font-medium items-center">
           <div
             className="relative group"
             onMouseEnter={() => setShowServices(true)}
