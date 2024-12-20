@@ -60,7 +60,7 @@ const Header = () => {
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-4 leading-tight">
           SGP Construction <br />& Holding
         </h1>
-        <p className="text-sm sm:text-base md:text-lg text-center max-w-xl mb-6">
+        <p className="text-sm sm:text-base md:text-md text-center max-w-xl mb-6">
           Explore innovative solutions and cutting-edge designs that bring your
           ideas to life. Whether you're building your dream home, renovating an
           office, or creating custom products, we provide the plans and

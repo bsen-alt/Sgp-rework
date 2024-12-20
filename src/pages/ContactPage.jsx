@@ -1,16 +1,16 @@
 import React from "react";
+import gridVid from "../assets/images/constructionVid.mp4";
 
 const ContactPage = () => {
   return (
     <div className="mt-36">
       ContactPage
-      <div className="rounded-lg">
-        <iframe
-          className="rounded-lg"
-          src="https://www.google.com/maps/d/embed?mid=1HdFrFQkCjOTXuaaF2Ku9li9xZ6YQ82A&ehbc=2E312F"
-          width="300"
-          height="480"
-        ></iframe>
+      <div class="container">
+        <img
+          class="one"
+          src="https://assets.codepen.io/5928893/masking-balloons.jpg"
+          alt="Balloons"
+        />
       </div>
     </div>
   );

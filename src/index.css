@@ -42,3 +42,14 @@ body {
 .card {
   background-clip: border-box;
 }
+.clip-card {
+  clip-path: inset(0);
+  background-image: url(${gridVid});
+  background-size: cover;
+  background-position: center;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
