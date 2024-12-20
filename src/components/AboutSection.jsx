@@ -32,7 +32,7 @@ const AboutSection = () => {
             better future for our clients and the communities we serve.
           </p>
           <a
-            href="#contact"
+            href="/contact"
             className="inline-block px-6 py-3 text-white bg-yellow-500 rounded-md shadow-md hover:bg-yellow-600 transition-all duration-300"
           >
             Get in Touch
